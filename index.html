@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренажер по программированию</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 1200px;
+            width: 90%;
+        }
+        h1 {
+            color: #4a4a4a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        p.subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .rules-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-left: 5px solid #667eea;
+        }
+        .rules-title {
+            color: #667eea;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .rules-list {
+            list-style: none;
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .rules-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+            line-height: 1.6;
+        }
+        .rules-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .rules-list li strong {
+            color: #667eea;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 30px;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card-desc {
+            color: #777;
+            font-size: 0.95rem;
+        }
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .footer p {
+            color: #888;
+            font-size: 0.9rem;
+            padding-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .card {
+                width: 100%;
+            }
+            .rules-section {
+                padding: 15px;
+            }
+            .rules-list li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Тренажер по программированию</h1>
+        <p class="subtitle">Тема: программирование на языке высокого уровня</p>
+        
+        <div class="rules-section">
+            <div class="rules-title">📋 Правила тестирования</div>
+            <ul class="rules-list">
+                <li><strong>Выберите любой тест</strong> из представленных ниже категорий</li>
+                <li>В тестах встречается <strong>3 типа вопросов</strong>: 
+                    <br>• вопрос с radioButton (один вариант из нескольких)
+                    <br>• вопрос с выпадающим списком (сопоставление)
+                    <br>• вопрос где нужно вписать слово (текстовое поле)
+                </li>
+                <li>За каждую верно решённую задачу начисляется <strong>по одному баллу</strong></li>
+                <li><strong>Максимальное количество баллов — 30</strong> (по одному тесту)</li>
+            </ul>
+        </div>
+
+        <p class="subtitle sir" style="font-size: 30px; color: black; margin-bottom: 30px; font-weight: 600;">Выберите категорию для начала тестирования</p>
+        
+        <div class="categories">
+            <a href="TEST_1/TEST_1.html" class="card">
+                <div class="card-icon">📚</div>
+                <div class="card-title">Основы и Алгоритмы</div>
+                <div class="card-desc">30 вопросов по базовым понятиям, типам данных и алгоритмизации</div>
+            </a>
+            <a href="TEST_2/TEST_2.html" class="card">
+                <div class="card-icon">💻</div>
+                <div class="card-title">Практика и Код</div>
+                <div class="card-desc">30 вопросов по синтаксису C#, циклам и работе с кодом</div>
+            </a>
+            <a href="TEST_3/TEST_3.html" class="card">
+                <div class="card-icon">🚀</div>
+                <div class="card-title">Продвинутые темы</div>
+                <div class="card-desc">30 вопросов по командной работе, современным технологиям и массивам</div>
+            </a>
+            <a href="TEST_4/TEST_4.html" class="card">
+                <div class="card-icon">🎯</div>
+                <div class="card-title">Профессиональные компетенции</div>
+                <div class="card-desc">30 вопросов по ООП, коллекциям и профессиональным навыкам</div>
+            </a>
+        </div>
+       
+        <footer class="footer">
+            <p>2026 МИДиС. Кафедра математики и информатики</p>
+        </footer>
+    </div>
+</body>
+</html>

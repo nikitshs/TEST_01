@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 1: Основы</title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Тренажер ПИ</span>
+            </div>
+            <a href="../index.html" class="home-btn">
+                <span>🏠</span>
+                <span>На главную</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <header class="page-header">
+            <h1>Основы и Алгоритмы</h1>
+            <p>Вопросы 1-30</p>
+        </header>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Что из перечисленного является языком программирования первого поколения?</p>
+                <label><input type="radio" name="q1" value="a"> FORTRAN</label>
+                <label><input type="radio" name="q1" value="b"> C</label>
+                <label><input type="radio" name="q1" value="c"> Python</label>
+                <label><input type="radio" name="q1" value="d"> Машинный код</label>
+            </div>
+            <div class="question">
+                <p>2. Что такое система программирования?</p>
+                <label><input type="radio" name="q2" value="a"> Операционная система</label>
+                <label><input type="radio" name="q2" value="b"> Язык программирования</label>
+                <label><input type="radio" name="q2" value="c"> Комплекс программных инструментов для разработки, отладки и выполнения программ</label>
+                <label><input type="radio" name="q2" value="d"> База данных</label>
+            </div>
+            <div class="question">
+                <p>3. Вам поручено прочитать из файла очень большое целое число (больше 2 миллиардов), которое приходит из внешней системы. Какой тип данных в C# следует выбрать, чтобы гарантированно избежать переполнения?</p>
+                <label><input type="radio" name="q3" value="a"> int</label>
+                <label><input type="radio" name="q3" value="b"> uint</label>
+                <label><input type="radio" name="q3" value="c"> long</label>
+                <label><input type="radio" name="q3" value="d"> decimal</label>
+            </div>
+            <div class="question">
+                <p>4. При разработке финансового приложения для расчёта процентов требуется высокая точность вычислений с десятичными дробями. Документация предупреждает об ошибках округления. Какой тип данных следует изучить и применить в первую очередь?</p>
+                <label><input type="radio" name="q4" value="a"> float</label>
+                <label><input type="radio" name="q4" value="b"> double</label>
+                <label><input type="radio" name="q4" value="c"> decimal</label>
+                <label><input type="radio" name="q4" value="d"> int</label>
+            </div>
+            <div class="question">
+                <p>5. Вы видите код: int[] numbers = new int[5];. Проанализировав его, вы правильно определите, что:</p>
+                <label><input type="radio" name="q5" value="a"> Массив создан с 5 элементами, каждый из которых имеет значение по умолчанию (0 для типа int)</label>
+                <label><input type="radio" name="q5" value="b"> Массив 5 элементов, значение null</label>
+                <label><input type="radio" name="q5" value="c"> Ошибка компиляции</label>
+                <label><input type="radio" name="q5" value="d"> Массив 4 элементов</label>
+            </div>
+            <div class="question">
+                <p>6. Что такое алгоритм?</p>
+                <label><input type="radio" name="q6" value="a"> Язык программирования высокого уровня</label>
+                <label><input type="radio" name="q6" value="b"> Случайная последовательность действий</label>
+                <label><input type="radio" name="q6" value="c"> Конечная последовательность точных действий, приводящая к решению задачи</label>
+                <label><input type="radio" name="q6" value="d"> Устройство для выполнения вычислений</label>
+            </div>
+            <div class="question">
+                <p>7. Исполнитель алгоритма — это:</p>
+                <label><input type="radio" name="q7" value="a"> Человек, который придумал алгоритм</label>
+                <label><input type="radio" name="q7" value="b"> Объект (человек или автоматическое устройство), который умеет выполнять определенный набор команд</label>
+                <label><input type="radio" name="q7" value="c"> Язык, на котором записан алгоритм</label>
+                <label><input type="radio" name="q7" value="d"> Устройство для хранения информации</label>
+            </div>
+            <div class="question">
+                <p>8. Что такое «блок-схема»?</p>
+                <label><input type="radio" name="q8" value="a"> Язык программирования</label>
+                <label><input type="radio" name="q8" value="b"> Графический способ представления алгоритма с использованием стандартных фигур</label>
+                <label><input type="radio" name="q8" value="c"> Таблица с исходными данными</label>
+                <label><input type="radio" name="q8" value="d"> Специальный математический аппарат</label>
+            </div>
+            <div class="question table-question">
+                <p>9. Сопоставьте описание и тип фигуры, для использования в блок-схемах:</p>
+                <table class="matching-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Описание</th>
+                            <th>Ваш ответ</th>
+                            <th>Фигура</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Какой элемент блок-схемы используется для обозначения начала или конца алгоритма?</td>
+                            <td>
+                                <select name="q9_1" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">а</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>а) Ромб</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Элемент блок-схемы, предназначенный для ввода или вывода данных, изображается в виде:</td>
+                            <td>
+                                <select name="q9_2" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">а</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>б) Овал</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Для обозначения процесса вычисления или действия в блок-схеме используется фигура:</td>
+                            <td>
+                                <select name="q9_3" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">а</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>в) Прямоугольник</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Какая конструкция позволяет выбрать одно из нескольких возможных действий в зависимости от условия</td>
+                            <td>
+                                <select name="q9_4" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">а</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>г) Параллелограмм</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-feedback q9-feedback"></div>
+            </div>
+            <div class="question">
+                <p>10. Как называется алгоритмическая конструкция, которая повторяет выполнение действий несколько раз?</p>
+                <label><input type="radio" name="q10" value="a"> Ветвление</label>
+                <label><input type="radio" name="q10" value="b"> Цикл (Повторение)</label>
+                <label><input type="radio" name="q10" value="c"> Линейный алгоритм</label>
+                <label><input type="radio" name="q10" value="d"> Оператор</label>
+            </div>
+            <div class="question">
+                <p>11. Вам нужно найти в официальной документации Microsoft, как объявить и инициализировать двумерный массив (матрицу) целых чисел с размерами 2x3. Какой синтаксис является верным?</p>
+                <label><input type="radio" name="q11" value="a"> int matrix = {{1, 2, 3}, {4, 5, 6}};</label>
+                <label><input type="radio" name="q11" value="b"> int [,] matrix = [ [1,2,3], [4,5,6] ];</label>
+                <label><input type="radio" name="q11" value="c"> int [,] matrix = { { 1, 2, 3 }, { 4, 5, 6 } };</label>
+                <label><input type="radio" name="q11" value="d"> int [][] matrix = new int [2,3];</label>
+            </div>
+            <div class="question">
+                <p>12. Вам нужно найти в официальной документации Microsoft, как объявить и инициализировать массив целых чисел с предустановленными значениями {1, 2, 3}. Какой синтаксис является верным?</p>
+                <label><input type="radio" name="q12" value="a"> int array = {1, 2, 3};</label>
+                <label><input type="radio" name="q12" value="b"> array int = [1, 2, 3];</label>
+                <label><input type="radio" name="q12" value="c"> int[] array = { 1, 2, 3 };</label>
+                <label><input type="radio" name="q12" value="d"> int array[] = new int[3] {1, 2, 3};</label>
+            </div>
+            <div class="question">
+                <p>13. Вы видите код: int[,] matrix = new int[2, 3];. Проанализировав его, вы правильно определите, что:</p>
+                <label><input type="radio" name="q13" value="a"> Массив уже заполнен значениями по умолчанию для типа int, то есть единицами</label>
+                <label><input type="radio" name="q13" value="b"> Массив создан с 2 строками и 3 столбцами, каждый элемент имеет значение 0</label>
+                <label><input type="radio" name="q13" value="c"> Это объявление вызовет ошибку, так как массив не инициализирован</label>
+                <label><input type="radio" name="q13" value="d"> Массив можно сразу использовать для хранения 6 элементов типа string</label>
+            </div>
+            <div class="question">
+                <p>14. Требуется извлечь домен из email-адреса (часть после символа '@'). Лучшим решением будет:</p>
+                <label><input type="radio" name="q14" value="a"> Использовать цикл для поиска символа '@' и взять подстроку после него.</label>
+                <label><input type="radio" name="q14" value="b"> Использовать метод Split('@') и взять второй элемент массива.</label>
+                <label><input type="radio" name="q14" value="c"> Использовать регулярное выражение для поиска шаблона.</label>
+                <label><input type="radio" name="q14" value="d"> Использовать метод Substring с фиксированным индексом (например, 5).</label>
+            </div>
+            <div class="question">
+                <p>15. Требуется сохранить результат сложной математической операции (например, деление 1 на 3), чтобы потом использовать его для точных научных расчётов. Какой тип данных обеспечит наибольшую точность по умолчанию?</p>
+                <label><input type="radio" name="q15" value="a"> float</label>
+                <label><input type="radio" name="q15" value="b"> double</label>
+                <label><input type="radio" name="q15" value="c"> decimal</label>
+                <label><input type="radio" name="q15" value="d"> int</label>
+            </div>
+            <div class="question">
+                <p>16. Что было ключевым фактором развития языков высокого уровня?</p>
+                <label><input type="radio" name="q16" value="a"> Усложнение аппаратного обеспечения</label>
+                <label><input type="radio" name="q16" value="b"> Стремление повысить продуктивность программиста и абстрагироваться от аппаратуры</label>
+                <label><input type="radio" name="q16" value="c"> Необходимость писать более длинные программы</label>
+                <label><input type="radio" name="q16" value="d"> Исчезновение низкоуровневых языков</label>
+            </div>
+            <div class="question">
+                <p>17. Какой язык считается прямым предшественником многих современных языков (C, C++, Java, C#) с точки зрения синтаксиса?</p>
+                <label><input type="radio" name="q17" value="a"> FORTRAN</label>
+                <label><input type="radio" name="q17" value="b"> Язык B (и далее C)</label>
+                <label><input type="radio" name="q17" value="c"> Lisp</label>
+                <label><input type="radio" name="q17" value="d"> Pascal</label>
+            </div>
+            <div class="question text-question">
+                <p>18. Ключевое слово ______ используется для ветки кода, которая выполняется, если условие ложно.</p>
+                <input type="text" name="q18" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>19. Модификатор ______ делает член класса доступным только внутри этого класса.</p>
+                <input type="text" name="q19" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>20. Для сравнения двух значений на равенство используется оператор ______.</p>
+                <input type="text" name="q20" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>21. Вы читаете код коллеги и видите цикл for (;;) { ... }. Вам нужно быстро понять его поведение. Какой самый надёжный источник информации для этого?</p>
+                <label><input type="radio" name="q21" value="a"> Форум</label>
+                <label><input type="radio" name="q21" value="b"> Обратиться к официальной документации</label>
+                <label><input type="radio" name="q21" value="c"> Догадки</label>
+                <label><input type="radio" name="q21" value="d"> Друг</label>
+            </div>
+            <div class="question text-question">
+                <p>22. Вам нужно досрочно прекратить выполнение цикла при наступлении некоторого условия. Вы найдёте в справочной системе по языку C# для этой цели оператор _____________.</p>
+                <input type="text" name="q22" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>23. Вам нужно быстро найти информацию о том, как работает метод Array.Resize. Какой источник будет наиболее авторитетным и полезным?</p>
+                <label><input type="radio" name="q23" value="a"> Блог</label>
+                <label><input type="radio" name="q23" value="b"> Официальная страница документации Microsoft с описанием метода, его параметров и исключений</label>
+                <label><input type="radio" name="q23" value="c"> Соцсети</label>
+                <label><input type="radio" name="q23" value="d"> Книга</label>
+            </div>
+            <div class="question">
+                <p>24. Вам нужно выполнить суммирование по всем элементам матрицы. Какой подход наиболее оптимален:</p>
+                <label><input type="radio" name="q24" value="a"> foreach</label>
+                <label><input type="radio" name="q24" value="b"> Цикл foreach удобен, но вложенные циклы for дают больше контроля над индексами</label>
+                <label><input type="radio" name="q24" value="c"> while</label>
+                <label><input type="radio" name="q24" value="d"> Рекурсия</label>
+            </div>
+            <div class="question">
+                <p>25. Вам нужно скопировать элементы из одной прямоугольной матрицы source в другую target. Изучив современные практики, вы найдёте, что:</p>
+                <label><input type="radio" name="q25" value="a"> Присваивание</label>
+                <label><input type="radio" name="q25" value="b"> Необходимо использовать вложенные циклы для поэлементного копирования или метод Buffer.BlockCopy</label>
+                <label><input type="radio" name="q25" value="c"> Copy/Paste</label>
+                <label><input type="radio" name="q25" value="d"> Вручную</label>
+            </div>
+            <div class="question table-question">
+                <p>26. Сопоставьте описание и тип данных:</p>
+                <table class="matching-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Описание</th>
+                            <th>Ваш ответ</th>
+                            <th>Тип данных</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Для хранения Unicode-символа, полученного из международного источника (например, китайский иероглиф), необходимо выбрать тип данных. Какой стандартный тип в C# для этого предназначен?</td>
+                            <td>
+                                <select name="q26_1" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">а</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>а) decimal</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Для обработки данных необходимо точно представлять денежные суммы в разных валютах. Изучив технологии, вы найдёте готовый структурированный тип данных. Какой он?</td>
+                            <td>
+                                <select name="q26_2" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">а</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>б) string</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Для хранения набора символов (текста) используется тип данных</td>
+                            <td>
+                                <select name="q26_3" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">а</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>в) int</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Для объявления переменной, которая может хранить целое число, используется ключевое слово</td>
+                            <td>
+                                <select name="q26_4" class="match-select">
+                                    <option value="">—</option>
+                                    <option value="a">a</option>
+                                    <option value="б">б</option>
+                                    <option value="в">в</option>
+                                    <option value="г">г</option>
+                                </select>
+                            </td>
+                            <td>г) char</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-feedback q26-feedback"></div>
+            </div>
+            <div class="question">
+                <p>27. Вы анализируете задачу: нужно выполнить операцию ровно N раз, где N известно на момент начала цикла. Изучив стили кодирования, вы записали наиболее подходящую и ясную конструкцию:</p>
+                <label><input type="radio" name="q27" value="a"> while</label>
+                <label><input type="radio" name="q27" value="b"> for (int i = 0; i < n; i++)</label>
+                <label><input type="radio" name="q27" value="c"> do-while</label>
+                <label><input type="radio" name="q27" value="d"> foreach</label>
+            </div>
+            <div class="question text-question">
+                <p>28. Вам нужно найти самый эффективный способ узнать длину массива array. Изучив информацию на портале Microsoft Learn, вы запишите _____________:</p>
+                <input type="text" name="q28" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>29. В коде необходимо объявить переменную для хранения логического флага «Включен ли режим отладки». Для этого используется тип данных ____________</p>
+                <input type="text" name="q29" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>30. Конструкция ___________позволяет выбрать одно из нескольких возможных действий в зависимости от условия?</p>
+                <input type="text" name="q30" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <button type="button" onclick="checkAnswers()">Проверить ответы</button>
+            <button type="button" onclick="resetForm()">Сбросить</button>
+        </form>
+        <div id="result"></div>
+        <a href="../index.html" class="back-link">На главную</a>
+    </div>
+    <script src="script_1.js"></script>
+</body>
+</html>

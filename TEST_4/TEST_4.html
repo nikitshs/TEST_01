@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 4: Профессиональные компетенции</title>
+    <link rel="stylesheet" href="style_4.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🎯</span>
+                <span class="logo-text">Тренажер ПИ</span>
+            </div>
+            <a href="../index.html" class="home-btn">
+                <span>🏠</span>
+                <span>На главную</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <header class="page-header">
+            <h1>Профессиональные компетенции</h1>
+            <p>Вопросы 91-120</p>
+        </header>
+        <form id="quizForm">
+            <div class="question text-question">
+                <p>91. Какая важная компетенция помогает успешно взаимодействовать с руководством при работе с C#?</p>
+                <input type="text" name="q91" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>92. Почему важно правильно коммуницировать с клиентами во время разработки на C#?</p>
+                <input type="text" name="q92" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>93. Что является ключевым фактором эффективной организации работы команды при разработке на C#?</p>
+                <input type="text" name="q93" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>94. Как лучше всего обеспечить качество кода в команде разработчиков C#?</p>
+                <input type="text" name="q94" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>95. Как наиболее эффективно взаимодействовать с коллегами по проекту?</p>
+                <input type="text" name="q95" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>96. Что выведет код?</p>
+                <div class="code-block">int[,] m = {{1, 2}, {3, 4}};
+Console.Write(m[0,0] + m[1,1]);</div>
+                <label><input type="radio" name="q96" value="a"> 5 (1 + 4)</label>
+                <label><input type="radio" name="q96" value="b"> 3 (1 + 2)</label>
+                <label><input type="radio" name="q96" value="c"> 7 (3 + 4)</label>
+                <label><input type="radio" name="q96" value="d"> 6 (2 + 4)</label>
+            </div>
+            <div class="question text-question">
+                <p>97. Как найти минимальный элемент в массиве?</p>
+                <input type="text" name="q97" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>98. У последнего элемента массива из 10 элементов индекс будет ________________?</p>
+                <input type="text" name="q98" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>99. Что выведет код?</p>
+                <div class="code-block">int x = 5;
+int y = 10;
+if (x &lt; 10 &amp;&amp; y &gt; 5)
+    Console.WriteLine("True");
+else
+    Console.WriteLine("False");</div>
+                <label><input type="radio" name="q99" value="a"> True</label>
+                <label><input type="radio" name="q99" value="b"> False</label>
+                <label><input type="radio" name="q99" value="c"> Ошибка компиляции</label>
+                <label><input type="radio" name="q99" value="d"> Ничего</label>
+            </div>
+            <div class="question">
+                <p>100. Как заполнить матрицу единицами?</p>
+                <label><input type="radio" name="q100" value="a">
+                    <div class="code-block">for (int i = 0; i &lt; rows; i++)
+  for (int j = 0; j &lt; cols; j++)
+  {
+  matrix[i,j] = 1;
+        }</div>
+                </label>
+                <label><input type="radio" name="q100" value="b">
+                    <div class="code-block">for (int i = 0; i &lt; rows; i++)
+{
+  matrix[i] = 1;
+}</div>
+                </label>
+                <label><input type="radio" name="q100" value="c">
+                    <div class="code-block">matrix = 1;</div>
+                </label>
+                <label><input type="radio" name="q100" value="d">
+                    <div class="code-block">Fill(matrix, 1);</div>
+                </label>
+            </div>
+            <div class="question">
+                <p>101. Что будет выведено на экран?</p>
+                <div class="code-block">int[] nums = { 1, 2, 3, 4 };
+int sum = 0;
+for (int i = 0; i &lt; nums.Length; i += 2) {
+  sum += nums[i];
+}
+Console.Write(sum);</div>
+                <label><input type="radio" name="q101" value="a"> 4 (индексы 0 и 2: 1 + 3 = 4)</label>
+                <label><input type="radio" name="q101" value="b"> 10 (1 + 2 + 3 + 4)</label>
+                <label><input type="radio" name="q101" value="c"> 6 (2 + 4)</label>
+                <label><input type="radio" name="q101" value="d"> 5 (1 + 4)</label>
+            </div>
+            <div class="question">
+                <p>102. Что будет выведено на экран?</p>
+                <div class="code-block">int[] arr = { 0, 1, 2, 3 };
+for (int i = 0; i &lt; arr.Length; i++) {
+    arr[i] = i * 2;
+}
+Console.Write(arr[3]);</div>
+                <label><input type="radio" name="q102" value="a"> 6 (3 * 2)</label>
+                <label><input type="radio" name="q102" value="b"> 3</label>
+                <label><input type="radio" name="q102" value="c"> 4</label>
+                <label><input type="radio" name="q102" value="d"> 8</label>
+            </div>
+            <div class="question">
+                <p>103. Что будет выведено на экран?</p>
+                <div class="code-block">int[] numbers = new int[5];
+for (int i = 1; i &lt; numbers.Length; i++) {
+    numbers[i] = numbers[i - 1] + 2;
+}
+Console.Write(numbers[4]);</div>
+                <label><input type="radio" name="q103" value="a"> 8</label>
+                <label><input type="radio" name="q103" value="b"> 10</label>
+                <label><input type="radio" name="q103" value="c"> 6</label>
+                <label><input type="radio" name="q103" value="d"> 4</label>
+            </div>
+            <div class="question">
+                <p>104. Что будет выведено на экран?</p>
+                <div class="code-block">int sum = 0;
+for (int i = 1; i &lt;= 3; i++) {
+    for (int j = 1; j &lt;= i; j++) {
+  sum++;
+    }
+}
+Console.Write(sum);</div>
+                <label><input type="radio" name="q104" value="a"> 6</label>
+                <label><input type="radio" name="q104" value="b"> 3</label>
+                <label><input type="radio" name="q104" value="c"> 9</label>
+                <label><input type="radio" name="q104" value="d"> 5</label>
+            </div>
+            <div class="question">
+                <p>105. Что выведет этот код?</p>
+                <div class="code-block">int x = 5;
+if (x &gt; 3)
+{
+    Console.WriteLine("A");
+}
+else
+{
+    Console.WriteLine("B");
+}</div>
+                <label><input type="radio" name="q105" value="a"> A</label>
+                <label><input type="radio" name="q105" value="b"> B</label>
+                <label><input type="radio" name="q105" value="c"> AB</label>
+                <label><input type="radio" name="q105" value="d"> Ошибка</label>
+            </div>
+            <div class="question">
+                <p>106. Как правильно записать условие "x от 10 до 20"?</p>
+                <label><input type="radio" name="q106" value="a"> if (10 &lt;= x &lt;= 20)</label>
+                <label><input type="radio" name="q106" value="b"> if (x &gt; 10 &amp;&amp; x &lt; 20)</label>
+                <label><input type="radio" name="q106" value="c"> if (x &gt;= 10 &amp;&amp; x &lt;= 20)</label>
+                <label><input type="radio" name="q106" value="d"> if (x &gt;= 10 || x &lt;= 20)</label>
+            </div>
+            <div class="question">
+                <p>107. Что выведет код?</p>
+                <div class="code-block">int i = 3;
+while (i &gt; 0)
+{
+     i--;
+  Console.Write(i + " ");
+}</div>
+                <label><input type="radio" name="q107" value="a"> 3 2 1</label>
+                <label><input type="radio" name="q107" value="b"> 3 2 1 0</label>
+                <label><input type="radio" name="q107" value="c"> 2 1 0</label>
+                <label><input type="radio" name="q107" value="d"> 4 3 2 1</label>
+            </div>
+            <div class="question">
+                <p>108. Как правильно объявить массив из 5 целых чисел?</p>
+                <label><input type="radio" name="q108" value="a"> int array = new int[5];</label>
+                <label><input type="radio" name="q108" value="b"> int[] array = new int[5];</label>
+                <label><input type="radio" name="q108" value="c"> int array[5];</label>
+                <label><input type="radio" name="q108" value="d"> array int = new int[5];</label>
+            </div>
+            <div class="question">
+                <p>109. Что выведет код?</p>
+                <div class="code-block">int[] nums = {1, 2, 3};
+Console.WriteLine(nums[1]);</div>
+                <label><input type="radio" name="q109" value="a"> 0</label>
+                <label><input type="radio" name="q109" value="b"> 1</label>
+                <label><input type="radio" name="q109" value="c"> 2</label>
+                <label><input type="radio" name="q109" value="d"> 3</label>
+            </div>
+            <div class="question">
+                <p>110. Что делает этот код?</p>
+                <div class="code-block">int[,] matrix = new int[2,2];
+for (int i = 0; i &lt; 2; i++)
+{
+    for (int j = 0; j &lt; 2; j++)
+  {
+  matrix[i,j] = i + j;
+  }
+}</div>
+                <label><input type="radio" name="q110" value="a"> Заполняет матрицу единицами</label>
+                <label><input type="radio" name="q110" value="b"> Заполняет матрицу нулями</label>
+                <label><input type="radio" name="q110" value="c"> Заполняет матрицу суммами индексов</label>
+                <label><input type="radio" name="q110" value="d"> Меняет местами строки</label>
+            </div>
+            <div class="question">
+                <p>111. Какой принцип объектно-ориентированного программирования (ООП) гласит, что класс должен быть открыт для расширения, но закрыт для модификации?</p>
+                <label><input type="radio" name="q111" value="a"> Инкапсуляция</label>
+                <label><input type="radio" name="q111" value="b"> Наследование</label>
+                <label><input type="radio" name="q111" value="c"> Принцип открытости/закрытости (Open/Closed Principle)</label>
+                <label><input type="radio" name="q111" value="d"> Полиморфизм</label>
+            </div>
+            <div class="question">
+                <p>112. Для работы с каким типом нереляционной (NoSQL) базы данных в .NET можно использовать поставщик CosmosDB для Entity Framework Core?</p>
+                <label><input type="radio" name="q112" value="a"> Реляционная БД</label>
+                <label><input type="radio" name="q112" value="b"> Графовая БД</label>
+                <label><input type="radio" name="q112" value="c"> Документоориентированная БД</label>
+                <label><input type="radio" name="q112" value="d"> Колоночная БД</label>
+            </div>
+            <div class="question text-question">
+                <p>113. Ключевое слово sealed в C# применяется к классу, чтобы_________________</p>
+                <input type="text" name="q113" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>114. Экземпляр какого из этих типов будет размещен в стеке (stack), а не в куче (heap)?</p>
+                <label><input type="radio" name="q114" value="a"> Экземпляр класса</label>
+                <label><input type="radio" name="q114" value="b"> Целочисленная переменная (int)</label>
+                <label><input type="radio" name="q114" value="c"> Строка (string)</label>
+                <label><input type="radio" name="q114" value="d"> Массив (array)</label>
+            </div>
+            <div class="question">
+                <p>115. Какой метод у коллекции List&lt;T&gt; позволяет удалить элемент по его значению, а не по индексу?</p>
+                <label><input type="radio" name="q115" value="a"> .RemoveAt()</label>
+                <label><input type="radio" name="q115" value="b"> .Delete()</label>
+                <label><input type="radio" name="q115" value="c"> .Remove()</label>
+                <label><input type="radio" name="q115" value="d"> .Pop()</label>
+            </div>
+            <div class="question">
+                <p>116. Что делает следующий код?</p>
+                <div class="code-block">if (obj is string message)
+{
+    Console.WriteLine(message.Length);
+}</div>
+                <label><input type="radio" name="q116" value="a"> Всегда выбросит исключение</label>
+                <label><input type="radio" name="q116" value="b"> Проверяет, что obj не равен null, и выводит его длину</label>
+                <label><input type="radio" name="q116" value="c"> Проверяет, является ли obj строкой, и если да, то присваивает ее переменной message и выводит длину</label>
+                <label><input type="radio" name="q116" value="d"> Приводит тип obj к string, даже если это невозможно</label>
+            </div>
+            <div class="question">
+                <p>117. Напишите программу с использованием цикла While. Вклад в банке составляет x рублей. Ежегодно он увеличивается на p процентов, после чего дробная часть копеек отбрасывается.</p>
+                <label><input type="radio" name="q117" value="a">
+                    <div class="code-block">int x, p, y, n;
+x = Convert.ToInt32(Console.ReadLine());
+p = Convert.ToInt32(Console.ReadLine());
+y = Convert.ToInt32(Console.ReadLine());
+x = x*100; y = y*100; n = 0;
+while (x &lt; y)
+{
+   x = x + (p * x) / 100;
+   n=n+1;
+}
+Console.WriteLine(n);</div>
+                </label>
+                <label><input type="radio" name="q117" value="b">
+                    <div class="code-block">for (int i = 0; i &lt; y; i++)
+{
+   x = x + p;
+}</div>
+                </label>
+                <label><input type="radio" name="q117" value="c">
+                    <div class="code-block">while (x &gt; y)
+{
+   x = x * p;
+}</div>
+                </label>
+                <label><input type="radio" name="q117" value="d">
+                    <div class="code-block">do { x++; } while (x &lt; y);</div>
+                </label>
+            </div>
+            <div class="question">
+                <p>118. Напишите программу с использованием цикла For. Вводятся целые числа a и b. Гарантируется, что a не превосходит b. Выведите (через пробел) все нечетные числа от a до b (включительно).</p>
+                <label><input type="radio" name="q118" value="a">
+                    <div class="code-block">int a, b, i;
+a = Convert.ToInt32(Console.ReadLine());
+b = Convert.ToInt32(Console.ReadLine());
+for (i = a; i &lt;= b; i++)
+{
+ if (i % 2 != 0)
+ {
+  Console.Write(i + " ");
+  }
+}</div>
+                </label>
+                <label><input type="radio" name="q118" value="b">
+                    <div class="code-block">while (a &lt;= b)
+{
+  Console.Write(a);
+  a++;
+}</div>
+                </label>
+                <label><input type="radio" name="q118" value="c">
+                    <div class="code-block">for (i = 0; i &lt; b; i++)
+{
+  Console.Write(i);
+}</div>
+                </label>
+                <label><input type="radio" name="q118" value="d">
+                    <div class="code-block">if (a % 2 != 0)
+  Console.Write(a);</div>
+                </label>
+            </div>
+            <div class="question text-question">
+                <p>119. Какой класс из пространства имен System.IO является предпочтительным для чтения текстового файла?</p>
+                <input type="text" name="q119" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>120. Какой метод является виртуальным в классе System.Object и может быть переопределен для предоставления строкового представления объекта?</p>
+                <input type="text" name="q120" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <button type="button" onclick="checkAnswers()">Проверить ответы</button>
+            <button type="button" onclick="resetForm()">Сбросить</button>
+        </form>
+        <div id="result"></div>
+        <a href="../index.html" class="back-link">На главную</a>
+    </div>
+    <script src="script_4.js"></script>
+</body>
+</html>

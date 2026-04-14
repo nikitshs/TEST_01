@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 2: Практика</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Тренажер ПИ</span>
+            </div>
+            <a href="../index.html" class="home-btn">
+                <span>🏠</span>
+                <span>На главную</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <header class="page-header">
+            <h1>Практика и Код</h1>
+            <p>Вопросы 31-60</p>
+        </header>
+        <form id="quizForm">
+            <div class="question">
+                <p>31. Как в языке C# обозначается возведение в степень?</p>
+                <label><input type="radio" name="q31" value="a"> Используется оператор ^</label>
+                <label><input type="radio" name="q31" value="b"> Используется метод Math.Pow()</label>
+                <label><input type="radio" name="q31" value="c"> Используется оператор **</label>
+                <label><input type="radio" name="q31" value="d"> Используется оператор ^^</label>
+            </div>
+            <div class="question">
+                <p>32. Метод «сверху-вниз» при разработке алгоритма предполагает:</p>
+                <label><input type="radio" name="q32" value="a"> Сначала писать код, а потом думать о структуре</label>
+                <label><input type="radio" name="q32" value="b"> Последовательную детализацию: от общей задачи к частным подзадачам</label>
+                <label><input type="radio" name="q32" value="c"> Начинать разработку с самых мелких деталей</label>
+                <label><input type="radio" name="q32" value="d"> Использование только циклов</label>
+            </div>
+            <div class="question">
+                <p>33. Какая конструкция реализует команду: «Если на улице дождь, то возьми зонт, иначе надень кепку»?</p>
+                <label><input type="radio" name="q33" value="a"> Линейная</label>
+                <label><input type="radio" name="q33" value="b"> Полная форма ветвления (if-else)</label>
+                <label><input type="radio" name="q33" value="c"> Цикл с постусловием</label>
+                <label><input type="radio" name="q33" value="d"> Цикл со счетчиком</label>
+            </div>
+            <div class="question">
+                <p>34. Что будет результатом выполнения алгоритма: «Шаг 1: X = 5. Шаг 2: Y = 3. Шаг 3: Z = X + Y.»?</p>
+                <label><input type="radio" name="q34" value="a"> X = 8</label>
+                <label><input type="radio" name="q34" value="b"> Y = 8</label>
+                <label><input type="radio" name="q34" value="c"> Z = 8</label>
+                <label><input type="radio" name="q34" value="d"> Ошибка</label>
+            </div>
+            <div class="question">
+                <p>35. Каким образом в C# можно вычислить остаток от деления a на b?</p>
+                <label><input type="radio" name="q35" value="a"> a % b</label>
+                <label><input type="radio" name="q35" value="b"> a / b</label>
+                <label><input type="radio" name="q35" value="c"> a ^ b</label>
+                <label><input type="radio" name="q35" value="d"> a & b</label>
+            </div>
+            <div class="question text-question">
+                <p>36. Цикл, который выполняется, пока условие истинно, называется ______.</p>
+                <input type="text" name="q36" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>37. Для объединения нескольких условий используется логический оператор ______ (И).</p>
+                <input type="text" name="q37" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>38. Сколько раз выполнится тело цикла? Что будет выведено?</p>
+                <div class="code-block">for (i=0; i&lt;3; i=i+1)<br>Console.Write(i+" ")</div>
+                <label><input type="radio" name="q38" value="a"> 2 раза, выведено: 0 1</label>
+                <label><input type="radio" name="q38" value="b"> 3 раза, выведено: 0 1 2</label>
+                <label><input type="radio" name="q38" value="c"> 4 раза, выведено: 0 1 2 3</label>
+                <label><input type="radio" name="q38" value="d"> 3 раза, выведено: 1 2 3</label>
+            </div>
+            <div class="question table-question">
+                <p>39. Сопоставьте определение и метод:</p>
+                <table class="matching-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Определение</th>
+                            <th>Метод</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Для генерации случайного целого числа в заданном диапазоне [minValue, maxValue - 1] используется метод</td>
+                            <td>а) Console.ReadLine()</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Для чтения ввода пользователя с консоли используется метод</td>
+                            <td>б) Next(int minValue, int maxValue)</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Для вывода текста в консоль используется метод.</td>
+                            <td>в) Console.ReadKey()</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Метод, который останавливает выполнение программы и ожидает, пока пользователь нажмет ЛЮБУЮ клавишу на клавиатуре.</td>
+                            <td>г) Console.WriteLine()</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-answer-input">
+                    <label>Ваш ответ:</label>
+                    <div class="select-row">
+                        <span>1:</span>
+                        <select name="q39_1" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>2:</span>
+                        <select name="q39_2" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>3:</span>
+                        <select name="q39_3" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>4:</span>
+                        <select name="q39_4" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-feedback q39-feedback"></div>
+            </div>
+            <div class="question table-question">
+                <p>40. Сопоставьте выражение и его запись на алгоритмическом языке:</p>
+                <table class="matching-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Выражение</th>
+                            <th>Запись</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ax² + bx + c</td>
+                            <td>а) (x == 10)</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Как правильно записать проверку, что число x равно 10?</td>
+                            <td>б) (x >= 10 && x <= 20)</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Как проверить, что x находится между 10 и 20 включительно?</td>
+                            <td>в) a * x^2 + b * x + c</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>|x - y|</td>
+                            <td>г) abs(x - y)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-answer-input">
+                    <label>Ваш ответ:</label>
+                    <div class="select-row">
+                        <span>1:</span>
+                        <select name="q40_1" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>2:</span>
+                        <select name="q40_2" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>3:</span>
+                        <select name="q40_3" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>4:</span>
+                        <select name="q40_4" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-feedback q40-feedback"></div>
+            </div>
+            <div class="question">
+                <p>41. Как возвести число x в 3 степень?</p>
+                <label><input type="radio" name="q41" value="a"> Pow(x)</label>
+                <label><input type="radio" name="q41" value="b"> Stepen3(x)</label>
+                <label><input type="radio" name="q41" value="c"> Arifmetic.Pow(x, 3)</label>
+                <label><input type="radio" name="q41" value="d"> Math.Pow(x, 3)</label>
+            </div>
+            <div class="question table-question">
+                <p>42. Установите соответствие способов ввода данных в массив:</p>
+                <table class="matching-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Способ</th>
+                            <th>Код</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>По одному</td>
+                            <td>а) string s= Console.ReadLine(); string[] arr=s.Split(); for (i = 0; i < n; i++) { m[i] = Convert.ToInt32(arr[i]); }</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>В строку через пробел</td>
+                            <td>б) for (i = 0; i < n; i++) { m[i] = rand.Next(-100, 100); }</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Случайными числами</td>
+                            <td>в) for (i = 0; i < n; i++) { m[i] = i*45+23; }</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Вычислением формулой</td>
+                            <td>г) for (i = 0; i < n; i++) { m[i] = Convert.ToInt32(Console.ReadLine()); }</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-answer-input">
+                    <label>Ваш ответ:</label>
+                    <div class="select-row">
+                        <span>1:</span>
+                        <select name="q42_1" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>2:</span>
+                        <select name="q42_2" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>3:</span>
+                        <select name="q42_3" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>4:</span>
+                        <select name="q42_4" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-feedback q42-feedback"></div>
+            </div>
+            <div class="question">
+                <p>43. Напишите программу с использованием цикла While. Выведите все точные квадраты натуральных чисел, не превосходящие данного числа N.</p>
+                <label><input type="radio" name="q43" value="a">
+                    <div class="code-block">int N, y;<br>N = Convert.ToInt32(Console.ReadLine());<br>y=1;<br>while(y*y&lt;=N)<br>{<br>&nbsp;&nbsp;Console.WriteLine(y*y);<br>&nbsp;&nbsp;y=y+1;<br>}<br>Console.ReadLine();</div>
+                </label>
+                <label><input type="radio" name="q43" value="b">
+                    <div class="code-block">for (y=1; y&lt;=N; y++)<br>{<br>&nbsp;&nbsp;Console.WriteLine(y);<br>}</div>
+                </label>
+                <label><input type="radio" name="q43" value="c">
+                    <div class="code-block">do<br>{<br>&nbsp;&nbsp;Console.WriteLine(y);<br>} while (y&lt;N);</div>
+                </label>
+                <label><input type="radio" name="q43" value="d">
+                    <div class="code-block">if (y*y&lt;=N)<br>&nbsp;&nbsp;Console.WriteLine(y);</div>
+                </label>
+            </div>
+            <div class="question">
+                <p>44. Напишите программу с использованием цикла For. Вводятся целые числа a и b. Гарантируется, что a не превосходит b. Выведите (через пробел) все четные числа от a до b (включительно).</p>
+                <label><input type="radio" name="q44" value="a">
+                    <div class="code-block">int a, b, i;<br>a = Convert.ToInt32(Console.ReadLine());<br>b = Convert.ToInt32(Console.ReadLine());<br>for (i = a; i &lt;= b; i++)<br>{<br>&nbsp;&nbsp;if (i % 2 == 0)<br>&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(i + " ");<br>&nbsp;&nbsp;}<br>}</div>
+                </label>
+                <label><input type="radio" name="q44" value="b">
+                    <div class="code-block">while (a &lt;= b)<br>{<br>&nbsp;&nbsp;Console.Write(a);<br>&nbsp;&nbsp;a++;<br>}</div>
+                </label>
+                <label><input type="radio" name="q44" value="c">
+                    <div class="code-block">for (i = 0; i &lt; b; i++)<br>{<br>&nbsp;&nbsp;Console.Write(i);<br>}</div>
+                </label>
+                <label><input type="radio" name="q44" value="d">
+                    <div class="code-block">if (a % 2 == 0)<br>&nbsp;&nbsp;Console.Write(a);</div>
+                </label>
+            </div>
+            <div class="question table-question">
+                <p>45. Установите соответствие способов ввода данных в массив:</p>
+                <table class="matching-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Условие</th>
+                            <th>Код</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>количество элементов известно</td>
+                            <td>а) for (i = 0; i < m.Length; i++) { m[i] = rand.Next(-100, 100); }</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>количество элементов неизвестно</td>
+                            <td>б) While (m[i] <> 0) { m[i] = Convert.ToInt32(Console.ReadLine()); i++; }</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>пока не ввели ноль</td>
+                            <td>в) for (i = 0; i < m.Length; i++) { m[i] = Convert.ToInt32(arr[i]); }</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>случайными числами</td>
+                            <td>г) for (i = 0; i < n; i++) { m[i] = Convert.ToInt32(Console.ReadLine()); }</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-answer-input">
+                    <label>Ваш ответ:</label>
+                    <div class="select-row">
+                        <span>1:</span>
+                        <select name="q45_1" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>2:</span>
+                        <select name="q45_2" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>3:</span>
+                        <select name="q45_3" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>4:</span>
+                        <select name="q45_4" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-feedback q45-feedback"></div>
+            </div>
+            <div class="question table-question">
+                <p>46. Сопоставьте описание и название:</p>
+                <table class="matching-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Описание</th>
+                            <th>Название</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Как называется цикл, в котором количество повторений известно заранее?</td>
+                            <td>а) Цикл с условием (цикл WHILE)</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Какой оператор реализует полное ветвление?</td>
+                            <td>б) Рекурсия</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Как называется цикл, в котором количество повторений зависит от выполнения условия?</td>
+                            <td>в) if-else</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Процесс, в котором функция вызывает саму себя напрямую или косвенно (через другую функцию) для решения задачи</td>
+                            <td>г) Цикл со счетчиком (цикл FOR)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-answer-input">
+                    <label>Ваш ответ:</label>
+                    <div class="select-row">
+                        <span>1:</span>
+                        <select name="q46_1" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>2:</span>
+                        <select name="q46_2" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>3:</span>
+                        <select name="q46_3" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                    <div class="select-row">
+                        <span>4:</span>
+                        <select name="q46_4" class="match-select">
+                            <option value="">—</option>
+                            <option value="a">а</option>
+                            <option value="б">б</option>
+                            <option value="в">в</option>
+                            <option value="г">г</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-feedback q46-feedback"></div>
+            </div>
+            <div class="question">
+                <p>47. Что такое «неполная форма ветвления»?</p>
+                <label><input type="radio" name="q47" value="a"> Конструкция, в которой действие выполняется только при истинности условия, а при ложности — ничего не происходит</label>
+                <label><input type="radio" name="q47" value="b"> Конструкция, в которой всегда выполняются оба действия</label>
+                <label><input type="radio" name="q47" value="c"> Конструкция, в которой условие не проверяется</label>
+                <label><input type="radio" name="q47" value="d"> Другое название цикла</label>
+            </div>
+            <div class="question">
+                <p>48. Для чего в циклах используется переменная-счетчик?</p>
+                <label><input type="radio" name="q48" value="a"> Для хранения результата вычислений</label>
+                <label><input type="radio" name="q48" value="b"> Для проверки сложных условий</label>
+                <label><input type="radio" name="q48" value="c"> Для подсчета количества выполненных повторений цикла</label>
+                <label><input type="radio" name="q48" value="d"> Для ввода данных</label>
+            </div>
+            <div class="question text-question">
+                <p>49. Алгоритм, в котором шаги выполняются один за другим без пропусков и повторений, называется ___________________.</p>
+                <input type="text" name="q49" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>50. Как в C# записать выражение для нахождения абсолютного значения числа x?</p>
+                <input type="text" name="q50" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>51. Выполните трассировку. Какое значение примет переменная sum?</p>
+                <div class="code-block">sum = 0<br>for (i=1; i&lt;=5; i=i+1)<br>if (i % 2 == 0) { sum += i }<br>Console.Write(sum)</div>
+                <label><input type="radio" name="q51" value="a"> 4</label>
+                <label><input type="radio" name="q51" value="b"> 6 (2 + 4)</label>
+                <label><input type="radio" name="q51" value="c"> 10</label>
+                <label><input type="radio" name="q51" value="d"> 15</label>
+            </div>
+            <div class="question text-question">
+                <p>52. Что означает оператор () в математическом выражении?</p>
+                <input type="text" name="q52" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>53. Как в C# можно выразить логическую операцию "и" между условиями?</p>
+                <input type="text" name="q53" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>54. Что означает выражение Math.Sqrt(x) в C#?</p>
+                <input type="text" name="q54" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question text-question">
+                <p>55. Какой результат выражения 5 % 3?</p>
+                <input type="text" name="q55" class="text-input" placeholder="Введите ваш ответ">
+                <div class="text-feedback"></div>
+            </div>
+            <div class="question">
+                <p>56. Как проверить одновременно, что a больше 0 и b меньше 10?</p>
+                <label><input type="radio" name="q56" value="a"> if (a > 0 && b < 10)</label>
+                <label><input type="radio" name="q56" value="b"> if (a > 0 || b < 10)</label>
+                <label><input type="radio" name="q56" value="c"> if (a > 0 && b > 10)</label>
+                <label><input type="radio" name="q56" value="d"> if (a > 0 + b < 10)</label>
+            </div>
+            <div class="question">
+                <p>57. Можно ли написать условие без фигурных скобок, если внутри один оператор?</p>
+                <label><input type="radio" name="q57" value="a"> Да, если внутри только один оператор, их можно не писать</label>
+                <label><input type="radio" name="q57" value="b"> Нет, это ошибка синтаксиса</label>
+                <label><input type="radio" name="q57" value="c"> Да, так всегда лучше делать</label>
+                <label><input type="radio" name="q57" value="d"> Нет, в C# так писать нельзя</label>
+            </div>
+            <div class="question">
+                <p>58. Что делает следующий цикл?</p>
+                <div class="code-block">for (int i = 0; i < 5; i++)<br>{<br>&nbsp;&nbsp;Console.WriteLine(i);<br>}</div>
+                <label><input type="radio" name="q58" value="a"> Выводит числа от 0 до 4</label>
+                <label><input type="radio" name="q58" value="b"> Выводит числа от 1 до 5</label>
+                <label><input type="radio" name="q58" value="c"> Бесконечно выводит число 0</label>
+                <label><input type="radio" name="q58" value="d"> Выводит числа от 0 до 5 включительно</label>
+            </div>
+            <div class="question">
+                <p>59. Какой из следующих вариантов корректен для подсчета суммы чисел от 1 до 10?</p>
+                <label><input type="radio" name="q59" value="a">
+                    <div class="code-block">int sum=0;<br>for(int i=1; i&lt;=10; i++)<br>{<br>&nbsp;&nbsp;sum += i;<br>}<br>Console.WriteLine(sum);</div>
+                </label>
+                <label><input type="radio" name="q59" value="b">
+                    <div class="code-block">int sum=0;<br>while(i&lt;=10)<br>{<br>&nbsp;&nbsp;sum += i;<br>&nbsp;&nbsp;i++;<br>}</div>
+                </label>
+                <label><input type="radio" name="q59" value="c">
+                    <div class="code-block">int sum=0;<br>do<br>{<br>&nbsp;&nbsp;sum += i;<br>&nbsp;&nbsp;i++;<br>} while(i&lt;=10);</div>
+                </label>
+                <label><input type="radio" name="q59" value="d"> Все варианты верны</label>
+            </div>
+            <div class="question">
+                <p>60. Дан фрагмент кода. Чему будет равно значение переменной x после его выполнения?</p>
+                <div class="code-block">x = 5<br>x = x + 3<br>x = x - 1</div>
+                <label><input type="radio" name="q60" value="a"> 7</label>
+                <label><input type="radio" name="q60" value="b"> 8</label>
+                <label><input type="radio" name="q60" value="c"> 4</label>
+                <label><input type="radio" name="q60" value="d"> 2</label>
+            </div>
+            <button type="button" onclick="checkAnswers()">Проверить ответы</button>
+            <button type="button" onclick="resetForm()">Сбросить</button>
+        </form>
+        <div id="result"></div>
+        <a href="../index.html" class="back-link">На главную</a>
+    </div>
+    <script src="script_2.js"></script>
+</body>
+</html>
